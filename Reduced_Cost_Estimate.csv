@@ -1,0 +1,19 @@
+Region,Service,Upfront,Monthly,For 12 months,Currency,Configuration
+us-east-1,Amazon EC2,0,904.56,"10,854.72",USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (1500 GB), Instance type (t3.xlarge)"
+,Amazon EC2,0,967.92,"11,615.04",USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (1500 GB), Instance type (c4.xlarge)"
+,Amazon RDS for PostgreSQL,0,"2,073.40","24,880.8",USD,"Quantity (2), Storage volume (General Purpose SSD (gp2)), Storage amount (2000 GB per month), Instance type (db.m4.xlarge)"
+,Amazon Elastic IP,0,0,0,USD,Number of Amazon Elastic IP: 1
+,S3 Standard,0,46,552,USD,S3 Standard storage (2000 GB per month)
+,Elastic Load Balancing,0,"1,038.43","12,461.16",USD,Number of Application Load Balancers: 1
+,Elastic Load Balancing,0,191.63,"2,299.56",USD,"Number of Network Load Balancers: 1 
++ TCP Traffic: Processed bytes per NLB for TCP (10 Gb per hour), Average number of new TCP connections (1000 per second), Average TCP connection duration (5 seconds)
++ UDP Traffic: Processed bytes per NLB for UDP (10 Gb per hour), Average number of new UDP Flows (1000 per second), Average UDP Flow duration (5 seconds)
++ TLS Traffic: Processed bytes per NLB for TLS (10 Gb per hour), Average number of new TLS connections (1000 per second), Average TLS connection duration (5 seconds)"
+,Amazon Virtual Private Cloud (VPC),0,417.35,"5,008.2",USD,Number of NAT Gateways (1)
+,Amazon Route 53,0,531.75,"6,381",USD,"Hosted Zones (1), Basic Checks Within AWS (200), Number of Elastic Network Interfaces (5)"
+,Amazon CloudWatch,0,42.18,506.16,USD,
+,Monthly Total:,,"6,213.22",,,
+,"Changes made:
+EC2 pricing strategy has changed from on-demand to 1-year prepaid dedicated service plans for both web and application servers
+Also reduced capacity from 2000Gb to 1500Gb
+Amazon RDS for PostgreSQL changes instance from db.m5.2xlarge to db.m4.xlarge to reduce costs",,,,,

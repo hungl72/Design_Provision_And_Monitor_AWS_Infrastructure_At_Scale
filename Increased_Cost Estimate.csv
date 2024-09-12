@@ -1,0 +1,21 @@
+Region,Service,Upfront,Monthly,For 12 months,Currency,Configuration
+us-east-1,Amazon EC2,0,"2,609.11","31,309.32",USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (5000 GB), Instance type (t3.2xlarge)"
+,Amazon EC2,0,"2,735.84","32,830.08",USD,"Operating system (Linux), Quantity (4), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (5000 GB), Instance type (c4.2xlarge)"
+,Amazon RDS for PostgreSQL,0,"11,316.96","135,803.52",USD,"Quantity (2), Storage volume (General Purpose SSD (gp2)), Storage amount (5000 GB per month), Instance type (db.m5.8xlarge)"
+,Amazon Elastic IP,0,0,0,USD,Number of Amazon Elastic IP: 1
+,S3 Standard,0,460,5520,USD,S3 Standard storage (20000 GB per month)
+,Elastic Load Balancing,0,"1,038.43","12,461.16",USD,Number of Application Load Balancers: 1
+,Elastic Load Balancing,0,191.63,"2,299.56",USD,"Number of Network Load Balancers: 1 
++ TCP Traffic: Processed bytes per NLB for TCP (10 Gb per hour), Average number of new TCP connections (1000 per second), Average TCP connection duration (5 seconds)
++ UDP Traffic: Processed bytes per NLB for UDP (10 Gb per hour), Average number of new UDP Flows (1000 per second), Average UDP Flow duration (5 seconds)
++ TLS Traffic: Processed bytes per NLB for TLS (10 Gb per hour), Average number of new TLS connections (1000 per second), Average TLS connection duration (5 seconds)"
+,Amazon Virtual Private Cloud (VPC),0,417.35,"5,008.2",USD,Number of NAT Gateways (1)
+,Amazon Route 53,0,988,"11,856",USD,"Hosted Zones (1), Basic Checks Within AWS (200), Number of Elastic Network Interfaces (10)"
+,Amazon CloudWatch,0,42.18,506.16,USD,
+,Monthly Total:,,"19,799.5",,,
+,"Changes made:
+EC2 pricing strategy changed from on-demand to 1-year prepaid dedicated service plans for both web and application servers
+Additionally, capacity increased from 2000Gb to 5000Gb and web server instance changed from t3.xlarge to t3.2xlarge, application server instance changed from c4.xlarge to c4.2xlarge
+Amazon RDS for PostgreSQL instance changed from db.m5.2xlarge to db.m5.8xlarge and storage increased to 5000Gb
+Route 53 - increased number of Elastic Network Instances from 5 to 10
+Increase S3 storage to 20000Gb",,,,,
